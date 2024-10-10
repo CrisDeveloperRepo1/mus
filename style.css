@@ -16,6 +16,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px; /* Añadir padding a los lados */
 }
 
 .header {
@@ -51,7 +52,7 @@ body {
 }
 
 .img-1 {
-  max-width: 100%; /* Hace que la imagen sea responsive */
+  width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho */
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
