@@ -68,12 +68,9 @@ body {
   padding: 0;
 }
 
-.footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #b2c22c; /* Cambia el color de fondo al mismo que el de la página */
+.footer a {
+  color: #000; /* Cambia el color del texto */
 }
-
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -93,4 +90,8 @@ body {
     flex-direction: column; /* Cambia a columna en pantallas pequeñas */
     align-items: center; /* Centra los elementos */
   }
+}
+
+.footer a {
+  color: #fff; /* Cambia el color del texto a blanco, por ejemplo */
 }
