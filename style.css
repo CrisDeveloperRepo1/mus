@@ -1,48 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-
 }
 
-
-
 body {
-
-    font-family: "Poppins", sans-serif;
-    background-color: #b2c22c;
+  font-family: "Poppins", sans-serif;
+  background-color: #b2c22c;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-
 }
-
-
-
 
 .header {
-    background-image: url(images/fondo.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 150vh;
-
-
-
-    display: flex;
-    align-items: flex-start; /* Alinea el contenido en la parte superior */
-    justify-content: center; /* Centra horizontalmente */
-    text-align: center;
-    padding-top: 80px;
+  background-image: url(images/fondo.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
 }
-
 
 .header-info h1,
 .header-info p {
-    color: white; /* Cambia el color del texto a blanco */
+  color: white;
+}
+
+.museo {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten */
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.museo-1,
+.museo-2 {
+  flex: 1 1 300px; /* Flex para adaptar el tamaño */
+  margin: 10px;
+  text-align: center; /* Centra el texto */
+}
+
+.img-1 {
+  max-width: 100%; /* Hace que la imagen sea responsive */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #fff; /* Puedes cambiar el color de fondo */
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer a {
+  color: #000; /* Cambia el color del texto */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header {
+    padding-top: 40px; /* Menor espacio en pantallas pequeñas */
+  }
+
+  .header-info h1 {
+    font-size: 1.5rem; /* Tamaño de fuente más pequeño */
+  }
+
+  .header-info p {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  }
+
+  .museo {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos */
+  }
 }
