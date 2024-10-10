@@ -68,9 +68,12 @@ body {
   padding: 0;
 }
 
-.footer a {
-  color: #000; /* Cambia el color del texto */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #b2c22c; /* Cambia el color de fondo al mismo que el de la página */
 }
+
 
 /* Media Queries */
 @media (max-width: 768px) {
